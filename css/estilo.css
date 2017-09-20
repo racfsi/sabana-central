@@ -1,0 +1,436 @@
+/*
+  OBTENER EL HIJO
+  .clase:nth-child(posicion) {
+    //estilo
+}
+*/
+body{
+  overflow: hidden !important;
+  background-color: gray;
+  margin: 0px;
+  font-family:'Lato', sans-serif;
+}
+.header-prin{
+  position: absolute;
+  top: 0%;  
+  width: 100%;
+  background-color: #000000;
+  height: 110px;
+  border-bottom: 5px solid rgb(223,216,159);
+}
+#sliderMobil{
+
+}
+.imgHeader{
+  height: 160px;
+  width: 100%;
+}
+.logoHeader{
+  height: 100px;
+  position: absolute;
+  top: 5%;
+  margin-left: 5%;
+}
+.logoHeaderD{
+  float: right;
+  width: 20%;
+  margin: 3%;
+  padding-right: 2%;
+}
+.formulario{
+  height: 0px;
+  width: 30%;
+  max-width: 30% !important;
+  /*margin-left: 69%;*/
+  margin-left: 70%;
+}
+.formHeader{
+  margin-top: 15%;
+  width: 25%;
+  max-width: 25% !important;
+  position: absolute;
+  background-color: rgb(255,255,255);
+}
+.textForm{
+  font-family:'Lato', sans-serif;
+  font-weight: bold;
+  /**color: rgb(223,216,159);**/
+  color: gray;
+  text-align: center;
+  font-size: 20px;
+  margin: 4%;
+}
+.formInput{
+  width: 40% !important;
+  display: inline !important;
+  margin-left: 3.5%;
+}
+.formInputSel{
+  display: inline !important;
+}
+.enlace{
+  color:gray;
+  font-size:12px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+  color:#666!important;
+  font-size: 12px;
+  background: #fff;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 0.5em;
+  height: 10px;
+  margin-bottom: 2%;
+}
+input[type="checkbox"]{
+  font-size: 12px;
+} 
+textarea{
+  color:#666!important;
+  background: #fff;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  display: block;
+  padding: 0.7em;
+  width: 88.3%;
+  max-width: 90%;
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px !important;
+  margin-left: 3.5%;
+}
+select{
+  color:#666!important;
+  font-size: 12px;
+  background: #fff;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 0.3em;
+  height: 30px;
+  width: 93.3%;
+  margin-bottom: 2%;
+  margin-left: 3.5%;
+}
+.divEnvio{
+  margin-left: 3.5%;
+  width: 100%;
+}
+.validaCap{
+  display: inline;
+  width: 50%;
+  float: left;
+  height: 60px;
+}
+.g-recaptcha {
+  margin: 0px;
+  padding: 0px;
+  transform:scale(0.50);
+  transform-origin:0 0;
+}
+.btnEnvio{
+  font-size: 12px !important;
+  width: 30%;
+  max-width: 30% !important;
+  float: right;
+  margin-right: 8%;
+  border: none;
+  display: inline;
+  color: white;
+  line-height: 21px;
+  background-color: gray!important;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.result{
+  font-size: 14px;
+  color:  gray !important;  
+}
+.msgResul{
+  margin-top: 20% !important;
+  text-align: center;
+}
+.sliderImganes{
+  margin-top: 0% !important;
+}
+
+/*EDITANDO CSS DEL SLIDER*/
+.slider{
+  width: 300% !important;
+}
+.btPrev, .btNext{
+  max-width: 3% !important;
+  max-height: 5% !important;
+}
+.slidImg{
+  height: auto !important;
+}
+.slidSec{
+  padding-bottom: 50% !important;
+  margin-bottom: 50% !important;
+}
+/*FIN EDICION CSS SLIDER*/
+
+
+.footer-prin{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 75px;  
+  background: #000000;
+  border-top: 5px solid rgb(223,216,159);
+}
+.imgFoot{
+  height: 160px !important;
+  width: 100%;
+}
+.footerInfo{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.redes{
+  width: 40%;
+  float: left;
+  list-style: none;
+  text-align: center;
+}
+.iconRedes{
+  display: inline;
+}
+.infoProdecol{
+  width: 50%;
+  float: right;
+  font-family:'Lato', sans-serif;
+  font-size: 12px;
+  margin-top: 1%;
+}
+.infoProdecol p{
+  margin-top: 1px !important;
+  font-size: 15px !important;
+}
+.info-iz{
+  width: 50%;
+  float: left;
+}
+.info-dr{
+  width: 50%;
+  float: left;
+}
+.imgRedes{
+  height: 25px;
+  margin-left: 3%;
+}
+.copyBee{
+  font-size:12px;
+  color:white;
+  margin-left:5%;
+}
+/*phone vertical*/
+@media only screen and (max-width: 500px) and (min-width: 100px) {
+  body{
+    /*height: 1000px !important;*/
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+  .imgHeader{
+    height: 100px;
+  }
+  .logoHeader {
+    height: 65px;
+    position: absolute;
+    top: 0%;
+    margin-left: 35%;
+  }
+  .formulario{
+    margin-left: 0%;
+  }
+  .formHeader{
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 62%;
+    position: absolute;
+    background-color: rgb(255,255,255);
+  }
+  .sliderImganes{
+    margin-top: 18% !important;
+  }
+  .btPrev, .btNext{
+    top: 33%;
+  }
+  .infoProdecol{
+    width: 50%;
+    margin-top: 2%;
+    float: right;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    padding-right: 3%;
+  }
+  footer{
+    top: 118%;
+  }
+  .footerInfo{
+    top: 14%;
+  }  
+  .imgFoot{
+    height: 120px;
+    width: 100%;
+  }
+  .redes{
+    width: 40%;
+    float: left;
+    list-style: none;
+    padding: 0% !important;
+    margin: 10% 0px 0px 0px;
+  }
+  .copyBee{
+    font-size: 10px;
+    color: white;
+    margin-left: 5%;
+    margin: 5%;
+  }
+  
+}
+/*phone horizontal*/
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+  body{
+    /*height: 1000px !important;*/
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+  .imgHeader {
+    height: 100px;
+  }
+  .logoHeader {
+    height: 65px;
+    position: absolute;
+    top: 0%;
+    margin-left: 40%;
+  }
+  .sliderImganes {
+    margin-top: 10% !important;
+  }
+  .formulario {
+    height: 0px;
+    width: 80%;
+    max-width: 80% !important;
+    margin-left: 10%;
+  }
+  .formHeader {
+    margin-top: 63%;
+    width: 80%;
+    max-width: 80% !important;
+    position: absolute;
+    background-color: rgb(255,255,255);
+  }
+  footer{
+    top: 270%;
+  }
+  .footerInfo{
+    top: 0% !important;
+  }  
+  .imgFoot {
+    height: 100px;
+    width: 100%;
+  }
+  .redes {
+    width: 25%;
+    float: left;
+    list-style: none;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+  .infoProdecol{
+    width: 30%;
+    margin-top: 2%;
+    float: right;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    padding-right: 3%;
+  }
+
+  /*EDITANDO EL SLIDER*/
+  .btPrev, .btNext{
+    top: 80% !important;
+  }
+  /*FIN EDICION DE SLIDER*/
+}
+/*IPHONE*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px){ 
+ body{
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+}
+@media only screen and (max-width: 1620px) and (min-width: 1395px) {
+  .header-prin{
+    height: 100px;
+  }
+  .logoHeader{
+    top: 0%;
+  }
+  .logoHeaderD{
+    margin-top: 2%;
+  }
+  .sliderImganes{
+    margin-top: -2% !important;
+  }
+  .redes{
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+  }
+  .footer-prin{
+    height: 3em;
+  }
+  .copyBee{
+    margin-top: 0%;
+  }
+
+}
+/*BIG SCREEN*/
+@media only screen and (max-width: 2560px) and (min-width: 1620px) {
+  .logoHeader{
+    top: 5%;
+  }
+  .imgHeader{
+    height: 230px !important;
+    width: 100 !important;
+  }
+  .logoHeader{
+    height: 120px !important;
+  }
+  .sliderImganes{
+    margin-top: 0% !important;  
+  } 
+  .slidImg{
+    height: 100% !important;  
+  }
+  .formHeader{
+    margin-top: 17% !important;  
+  }
+  .redes{
+    margin-top: 6% !important;  
+  }
+  .infoProdecol{
+    margin-top: 3.5% !important;  
+  }
+  footer{
+    top: 78% !important;
+  }
+  .imgFoot{
+    height: 200px !important;
+  }
+  .btPrev, .btNext{
+    max-width: 5% !important;
+    max-height: 5% !important;
+    line-height: 2;
+  }
+}

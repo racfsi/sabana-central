@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Sabana central</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/favico.ico">
+    <link rel="stylesheet" href="css/sliderStyle.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='js/envioDatos.js'></script>
+    <script src='js/validate.js'></script>
+</head>
+
+<body>
+    <div class="header-prin">
+        <img src="img/logo-iz.png" class="logoHeader">
+        <img src="img/logo-der.png" class="logoHeaderD">
+    </div>
+    <div class="formulario">
+        <div class="formHeader">
+            <p class="textForm">Contáctanos</p>
+            <form method="POST" onsubmit="envioMensaje();return false;" id="contacto">
+                <input class="formInput" id="nombre" type="text" name="nombre" placeholder="Nombre" required="">
+                <input class="formInput" id="apellido" type="text" name="apellido" placeholder="Apellido" required="">
+                <input class="formInput" id="correo" type="email" name="correo" placeholder="Email" required="">
+                <input class="formInput" id="telefono" type="number" name="telefono" placeholder="Teléfono" required="">
+                <select class="" id="seleccion" class="seleccion" required="">
+                    <option value="">Me interesa...</option>
+                    <option value="Comprar locale comercial">Comprar local comercial</option>
+                    <option value="Comprar oficina">Comprar oficina</option>
+                    <option value="Comprar apartamento de 3 alcobas">Comprar apartamento de 3 alcobas</option>
+                    <option value="Comprar apartamento de 2 alcobas">Comprar apartamento de 2 alcobas</option>
+                    <option value="Comprar apartamento de 2 alcobas">Comprar apartamento de 1 alcobas</option>
+                </select>
+                <textarea id="mensaje" name="mensaje" rows="3" cols="5" placeholder="Mensaje"></textarea>
+                <div style="text-align: center;"><input type="checkbox" name="terminos" id="terminos" value="Terminosycondiciones" required=""><span style="color:black;font-size:12px;">He leído y acepto la </span> <a class="enlace" href="http://www.polarisconstructora.com/politica-de-proteccion-de-datos" target="blank">Política de Tratamiento de Información de este sitio.</a></div>
+                <br>
+                <div class="divEnvio">
+                    <div class="validaCap">
+                        <div class="g-recaptcha" data-sitekey="6Lf-CSkUAAAAAJhlurOfzVHUJm5tPo4qrkAlo5vW"></div>
+                    </div>
+                    <input type="submit" value="Enviar" class="btnEnvio">
+                </div>
+            </form>
+            <div class="msgResul">
+                <p id="result" class="result"></p>
+            </div>
+        </div>
+    </div>
+    <div class="sliderImganes">
+        <div id="contenedor-slider" class="contenedor-slider">
+            <div id="slider" class="slider">
+                <section class="slidSec"><img src="img/slides/imagenweb1.png" class="slidImg"></section>                            
+                <section class="slidSec"><img src="img/slides/imagenweb2.png" class="slidImg"></section>
+                <section class="slidSec"><img src="img/slides/imagenweb3.png" class="slidImg"></section>
+            </div>
+            <div id="btPrev" class="btPrev">&#60;</div>
+            <div id="btNext" class="btNext">&#62;</div>
+        </div>
+    </div>
+    <div class="footer-prin">
+        <div class="footerInfo">
+            <ul class="redes">
+                <p class="copyBee">Copyright Polaris 2017</p>
+            </ul>
+            <div class="infoProdecol">
+                <div class="info-iz">
+                    <p style="color:white;"><span style="color:rgb(223, 216, 159);"><i class="fa fa-map-marker" aria-hidden="true"></i></span> Calle 13 con carrera 18<br><span style="color:rgb(223, 216, 159);"><i class="fa fa-envelope-o" aria-hidden="true"></i></span> sabanacentral@polarisconstructora.com<br></p>
+                </div>
+                <div class="info-dr">
+                    <p style="color:white;"><span style="color:rgb(223, 216, 159);"><i class="fa fa-phone" aria-hidden="true"></i></span> 528 24 54<br><span style="color:rgb(223, 216, 159);"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>  312 5173448</p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+</body>
+</html>
